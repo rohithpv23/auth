@@ -1,2 +1,9 @@
 node_modules
 package-lock.json
+
+
+# Build Directories
+public/dist/*
+public/css/*
+public/styleguide/*
+dist/*

@@ -4,6 +4,8 @@
   "description": "User authentication",
   "main": "index.js",
   "scripts": {
+    "start": "npm run build:client:prod && NODE_ENV=production node index.js",
+    "build:client:prod": "./node_modules/.bin/webpack -p",
     "dev": "npm run watch:server",
     "watch:server": "NODE_ENV=development ./node_modules/.bin/nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,10 +30,19 @@
     "cookie-parser": "^1.4.3",
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "fs": "0.0.1-security",
+    "jquery": "^3.2.1",
     "lodash": "^4.17.4",
     "multer": "^1.3.0"
   },
   "devDependencies": {
-    "nodemon": "^1.14.3"
+    "css-loader": "^0.28.7",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.14.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0"
   }
 }
