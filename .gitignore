@@ -5,5 +5,7 @@ package-lock.json
 # Build Directories
 public/dist/*
 public/css/*
-public/styleguide/*
 dist/*
+
+# Local Mac misc files
+*.DS_Store

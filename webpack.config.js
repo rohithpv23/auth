@@ -5,6 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const extractSass = new ExtractTextPlugin({
   filename: 'style.css',
+  // disable: process.env.NODE_ENV === "development"
 });
 
 module.exports = {
@@ -40,13 +41,14 @@ module.exports = {
             options: {
               sourceMap: true,
             },
-          }, {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true,
-              outputStyle: 'compact',
-            },
-          }],
+            }, {
+              loader: 'sass-loader',
+              options: {
+                sourceMap: true,
+                outputStyle: 'compact',
+              },
+            }
+          ],
         }),
       },
       {
@@ -60,4 +62,7 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    extractSass
+  ]
 };
