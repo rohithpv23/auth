@@ -4,6 +4,8 @@
   "description": "User authentication",
   "main": "index.js",
   "scripts": {
+    "dev": "npm run watch:server",
+    "watch:server": "NODE_ENV=development ./node_modules/.bin/nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,21 @@
   "bugs": {
     "url": "https://github.com/rohithpv23/auth/issues"
   },
-  "homepage": "https://github.com/rohithpv23/auth#readme"
+  "homepage": "https://github.com/rohithpv23/auth#readme",
+  "dependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-es2015-block-scoping": "^6.26.0",
+    "babel-plugin-transform-es2015-constants": "^6.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "lodash": "^4.17.4",
+    "multer": "^1.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.3"
+  }
 }
