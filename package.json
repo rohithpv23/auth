@@ -1,0 +1,19 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "description": "User authentication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohithpv23/auth.git"
+  },
+  "author": "rohithpv23",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohithpv23/auth/issues"
+  },
+  "homepage": "https://github.com/rohithpv23/auth#readme"
+}
