@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import 'public/scss/main.scss';
 
 window.$ = $;
 window.jQuery = $;
