@@ -23,7 +23,7 @@ app.engine('hbs', handlebars({
 app.set('view engine', 'hbs');
 
 // Middlewares
-// app.use(routes);
+app.use(routes());
 
 app.use((req, res, next) => {
   res.setHeader('X-Powered-By', 'Rohith Auth App');
@@ -34,7 +34,5 @@ app.use((req, res, next) => {
 app.post("/login", function (req, res) {
   res.send('Logged In...');
 });
-
-app.get('/login', (req, res) => res.render('pages/login'));
 
 app.listen(app.get('port'), () => console.log('Listening on port 3000!'));
